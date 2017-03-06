@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  height: 4em;
+  font-size: 1.3em;
+  margin: 9em 0.5em;
+}
+.button_bottom {
+  /*For the bottom button on the bottum*/
+  margin: 0;
+}
+.background_home {
+  background-image: url(https://static.pexels.com/photos/26454/pexels-photo-26454.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+}
+@media only screen and (min-width: 600px) {
+
+}
