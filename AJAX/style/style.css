@@ -8,6 +8,13 @@ body {
   font-size: 1.3em;
   margin: 9em 0.5em;
 }
+.div_button {
+  height: 4em;
+  background-color: red;
+  text-align: center;
+  margin: auto 0;
+  line-height: 3em;
+}
 .button_bottom {
   /*For the bottom button on the bottum*/
   margin: 0;
