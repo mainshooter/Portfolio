@@ -14,10 +14,32 @@ function deepLink() {
   if (link == '') {
     // If we dont need to do anything
     getRequest('index.html');
+    changeTitle("index.html");
   }
   else {
     link = link.replace("#", "");
     link += ".html";
     getRequest(link);
+    changeTitle(link);
   }
+}
+function changeTitle(title) {
+  // This function change the Title for the page
+  var titleArray = [];
+  titleArray["mywork.html"] = "My work";
+  titleArray["aboutme.html"] = "About me";
+  titleArray['contact.html'] = "Contact"
+  titleArray["index.html"] = "Portfolio - Peter Romijn";
+  // Here we store the title of every page
+  if (titleArray[title] == "Portfolio - Peter Romijn") {
+    title = "Portfolio - Peter Romijn";
+  }
+  else {
+    title = "Portfolio - Peter Romijn - " + titleArray[title];
+  }
+  displayTitle(title);
+}
+function displayTitle(title) {
+  // Dispay the title we changed
+  document.getElementById("title").innerHTML = title;
 }
