@@ -38,6 +38,8 @@ body {
 .background_home {
   background-image: url(http://localhost/leerjaar2/portfolio/AJAX/bg.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
