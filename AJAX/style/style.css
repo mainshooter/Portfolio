@@ -1,6 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Kayak;
+  color: white;
+  font-size: 1.3em;
+}
+@font-face {
+   font-family: Kayak;
+   src: url(http://localhost/leerjaar2/portfolio/AJAX/font/KayakSansRegular.otf);
 }
 
 .button {
@@ -9,20 +16,28 @@ body {
   margin: 9em 0.5em;
 }
 .div_button {
-  height: 4em;
-  background-color: red;
+  background-color: rgba(52, 152, 219, 0.8);
   text-align: center;
   margin: auto 0;
-  line-height: 3em;
+  padding: 1em;
+  border-radius: 1em;
+  border: 5px solid white;
+}.div_button a {
+  color: white;
+  font-size: 1.5em;
 }
 .button_bottom {
   /*For the bottom button on the bottum*/
   margin: 0;
 }
+.opacityFix {
+  /*In the index we have used opacity on a button but the text is als transparent
+  So fix this  */
+  opacity: 1.0 !important;
+}
 .background_home {
-  background-image: url(https://static.pexels.com/photos/26454/pexels-photo-26454.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-image: url(http://localhost/leerjaar2/portfolio/AJAX/bg.jpg);
+  background-size: cover;
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
