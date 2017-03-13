@@ -13,13 +13,13 @@ function deepLink() {
   var link = window.location.hash;
   if (link == '') {
     // If we dont need to do anything
-    getRequest('index.html');
+    loadItem('content','index.html');
     changeTitle("index.html");
   }
   else {
     link = link.replace("#", "");
     link += ".html";
-    getRequest(link);
+    loadItem('content', link);
     changeTitle(link);
   }
 }
@@ -55,4 +55,19 @@ function loadItem(elementID, file) {
   };
   xhttp.open("GET", file, true);
   xhttp.send();
+}
+function footerLoad() {
+  var footer = document.getElementById('footer-content').innerHTML;
+  // If there isnt anything in the footer
+  // We are gona load it!
+  if (footer == "") {
+    loadItem("footer-content", "footer.html");
+  }
+}
+function showYear() {
+  // This function display the year on the footer
+  var currentYear = new Date();
+  currentYear = currentYear.getFullYear();
+  console.log(currentYear);
+  document.getElementById('footer').innerHTML += currentYear;
 }

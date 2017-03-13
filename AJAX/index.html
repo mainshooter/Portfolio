@@ -8,13 +8,13 @@
   <meta name="description" content="Portfolio Peter Romijn">
   <meta name="keywords" content="Peter, Romijn, portfolio, webdeveloper, Tiel">
 
-  <link rel="stylesheet" href="style/grid.css" type="text/css">
-  <link rel="stylesheet" href="style/style.css" type="text/css">
+  <link rel="stylesheet" href="style/grid.css" type="text/css" async>
+  <link rel="stylesheet" href="style/style.css" type="text/css" async>
 
-  <script src="main.js"></script>
+  <script src="main.js" async></script>
 
   </head>
-  <body onhashchange="deepLink();" onload="loadItem('footer', 'footer.html');" class="background_home" onload="deepLink();">
+  <body onhashchange="deepLink(); footerLoad();" onload="deepLink(); footerLoad();" class="background_home">
     <div class="wrapper">
       <div id="content">
         <div class="row">
@@ -25,17 +25,15 @@
 
         <div class="row">
           <div class="col-1 col-m-0">&nbsp;</div>
-          <div class="col-2 col-m-3 div_button"><a href="#mywork"><span class="opacityFix">My work</span></a></div>
+          <div class="col-2 col-m-3 div_button"><a href="#mywork">My work</span></a></div>
           <div class="col-2 col-m-1"></div>
-          <div class="col-2 col-m-4 div_button"><a href="#contact"><span class="opacityFix">Contact me</span></a></div>
+          <div class="col-2 col-m-4 div_button"><a href="#contact">Contact me</span></a></div>
           <div class="col-2 col-m-1"></div>
-          <div class="col-2 col-m-3 div_button"><a href="#aboutme"><span class="opacityFix">About me</span></a></div>
+          <div class="col-2 col-m-3 div_button"><a href="#aboutme">About me</span></a></div>
           <div class="col-1 col-m-0">&nbsp;</div>
         </div>
       </div>
-      <div id="footer" class="footer">
-
-      </div>
     </div>
+    <div id="footer-content"></div>
   </body>
 </html>
