@@ -43,3 +43,16 @@ function displayTitle(title) {
   // Dispay the title we changed
   document.getElementById("title").innerHTML = title;
 }
+function loadItem(elementID, file) {
+  // This function prforms a AJAX REQUEST for specific items that needs to be replaced or loaded in ONCE
+  console.log(elementID);
+  console.log(file);
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById(elementID).innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", file, true);
+  xhttp.send();
+}
