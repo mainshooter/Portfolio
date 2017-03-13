@@ -53,6 +53,13 @@ body {
 .arrow-size {
     width: 3em;
 }
+form input {
+  font-size: 1em;
+}
+input[type=submit] {
+  color: white;
+  margin-top: 1em;
+}
 @media only screen and (min-width: 768px) {
     /* For desktop: */
 }
