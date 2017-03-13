@@ -105,6 +105,8 @@ html {
 }
 @media only screen and (min-width: 600px) {
     /* For tablets: */
+		.col-m-0 {width: 0%;
+		padding: 0;}
     .col-m-1 {width: 8.33%;}
     .col-m-2 {width: 16.66%;}
     .col-m-3 {width: 25%;}
@@ -120,6 +122,8 @@ html {
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
+		.col-0 {width: 0%;
+		    padding: 0;}
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
