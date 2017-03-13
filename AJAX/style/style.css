@@ -9,7 +9,9 @@ body {
    font-family: Kayak;
    src: url(http://localhost/leerjaar2/portfolio/AJAX/font/KayakSansRegular.otf);
 }
-
+.margin-header {
+  margin-top: 1em !important;
+}
 .button {
   height: 4em;
   font-size: 1.3em;
@@ -21,7 +23,7 @@ body {
   margin: auto 0;
   padding: 1em;
   border-radius: 1em;
-  border: 5px solid white;
+  border: 3px solid white;
 }.div_button a {
   color: white;
   font-size: 1.5em;
@@ -40,6 +42,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.center-text {
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
