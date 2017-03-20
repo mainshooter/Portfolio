@@ -9,6 +9,9 @@ body {
    font-family: Kayak;
    src: url(font/KayakSansRegular.otf);
 }
+strong {
+      font-style: oblique;
+}
 h1 {
   font-size: 2.2em;
   margin: 0.2em 0;
