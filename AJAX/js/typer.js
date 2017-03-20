@@ -71,6 +71,9 @@ function intializeTyper(array,speed, typeID, blinkerUse) {
   }
 }
 function cancelTyper() {
+  currentPosition = 0;
+  textArrayPosition = 0;
+
   clearInterval(type);
   clearInterval(blinker);
 }
