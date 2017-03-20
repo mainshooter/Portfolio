@@ -19,6 +19,11 @@ h1 {
 h2 {
       font-size: 2em;
 }
+button {
+  background-color: lightgray;
+  font-size: 1em;
+  color: black;
+}
 .margin-header {
   margin-top: 1em !important;
 }
@@ -43,6 +48,9 @@ h2 {
   color: white;
   font-size: 1.5em;
 }
+.project {
+  text-align: center;
+}
 .button_bottom {
   /*For the bottom button on the bottum*/
   margin: 0;
@@ -62,8 +70,7 @@ h2 {
   text-align: center;
 }
 .footer {
-    /*margin-top: 2em;*/
-    font-size: 0.8em;
+    font-size: 1.3em;
 }
 .arrow-size {
     width: 3em;
