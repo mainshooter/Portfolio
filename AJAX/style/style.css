@@ -67,6 +67,20 @@ input[type=submit] {
   color: white;
   margin-top: 1em;
 }
+/* Start blinker style */
+.blinker {
+  width: 0.3em;
+  height: 1em;
+  background: orange;
+}
+#blinker {
+  float: left;
+}
+#text {
+  float: left;
+  position: relative;
+}
+/* Style for the blinker */
 
 /* Style the links */
 a:link {

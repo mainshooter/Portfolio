@@ -12,11 +12,21 @@
   <link rel="stylesheet" href="style/style.css" type="text/css" async>
 
   <script src="main.js" async></script>
+  <script src="typer.js" async></script>
+  <script>
+    var textArray = [];
+    textArray[0] = "I'm a programmer";
+    textArray[1] = "Building web applications and websites";
+    textArray[2] = "With: HTML, CSS, Javascript, PHP and SQL";
+    intializeTyper(textArray, "normal", "text", "false");
+    // Texts in a array
+    // Text speed
+    // ID of the div that will contains the div
+    // If the blinker needs to work
+  </script>
 
   </head>
   <body onhashchange="deepLink(); footerLoad();" onload="deepLink(); footerLoad();" class="background_home">
-    <!-- <div id="particles-js"></div> -->
-
     <div class="wrapper">
       <div id="content">
         <div class="row">
@@ -26,6 +36,7 @@
         </div>
 
         <h1 class="col-12 center-text">Portfolio - Peter Romijn</h1>
+        <div class="col-12 center-text"><div class="center-text col-12" id="text">&nbsp;</div><div id="blinker">&nbsp;</div></div>
 
         <div class="row">
           <div class="col-1 col-m-0">&nbsp;</div>
