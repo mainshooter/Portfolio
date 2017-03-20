@@ -122,6 +122,7 @@ input[type=submit] {
     }
     #nav ul li:hover {
         background: #ecf0f1;
+        cursor:pointer;
     }
         #nav ul li:hover a {
             color: red;
@@ -152,6 +153,7 @@ nav ul ul {
         }
             #nav ul ul li a:hover {
                 background: #D61515;
+                cursor:pointer;
             }
 #nav ul ul ul {
     position: absolute;
