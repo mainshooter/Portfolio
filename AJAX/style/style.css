@@ -7,7 +7,7 @@ body {
 }
 @font-face {
    font-family: Kayak;
-   src: url(http://localhost/leerjaar2/portfolio/AJAX/font/KayakSansRegular.otf);
+   src: url(font/KayakSansRegular.otf);
 }
 h1 {
   font-size: 2.2em;
@@ -83,6 +83,7 @@ input[type=submit] {
 }
 #text {
   float: left;
+  font-size: 1.2em;
   position: relative;
 }
 /* Style for the blinker */
@@ -315,7 +316,7 @@ textarea {
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     #nav ul li a {
-      padding: 1.4em 4em;
+      padding: 1.4em 3em;
     }
     #nav ul {
     font-size: 0.9em;
