@@ -8,9 +8,8 @@
 
 var textArray = [];
 textArray[0] = "I'm a programmer";
-textArray[1] = "I'm will build something";
-textArray[2] = "You will love it!";
-textArray[3] = "And you pay for it!";
+textArray[1] = "Building web applications and websites";
+textArray[2] = "With: HTML, CSS, Javascript, PHP and SQL";
 // Contains the text
 // Contains the variable names of every text
 
@@ -71,6 +70,10 @@ function intializeTyper(array,speed, typeID, blinkerUse) {
     // We dont run the blinker because the developer doesn't want to
     blinkerHandler();
   }
+}
+function cancelTyper() {
+  clearInterval(type);
+  clearInterval(blinker);
 }
 function setBlinkerUse(blinkerUse) {
   if (blinkerUse == "true" || blinkerUse == 1) {

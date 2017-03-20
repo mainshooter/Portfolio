@@ -15,8 +15,10 @@ function deepLink() {
     // If we dont need to do anything
     loadItem('content','index-content.html');
     changeTitle("index.html");
+    // typeHandler();
   }
   else {
+    // cancelTyper();
     link = link.replace("#", "");
     link += ".html";
     loadItem('content', link);
