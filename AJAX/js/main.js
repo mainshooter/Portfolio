@@ -3,7 +3,7 @@ function deepLink() {
   var link = window.location.hash;
   if (link == '') {
     // If we dont need to do anything
-    loadItem('content','index-content.html');
+    loadItem('index-content.html');
     changeTitle("index.html");
     intializeTyper(["I am a programmer" , "Building web applications and websites", "With: HTML, CSS, Javascript, PHP and SQL"], "normal", "text", "false");
   }
@@ -11,7 +11,7 @@ function deepLink() {
     cancelTyper();
     link = link.replace("#", "");
     link += ".html";
-    loadItem('content', link);
+    loadItem(link);
     changeTitle(link);
   }
 }
@@ -47,20 +47,24 @@ function displayTitle(title) {
   // Dispay the title we changed
   document.getElementById("title").innerHTML = title;
 }
-function loadItem(elementID, file) {
+function loadItem(fileLocation) {
   // This function prforms a AJAX REQUEST for specific items that needs to be replaced or loaded in ONCE
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById(elementID).innerHTML = this.responseText;
+      // document.getElementById(elementID).innerHTML = this.responseText;
+      callBack(this);
       loader("false");
     }
     else {
       loader("true");
     }
   };
-  xhttp.open("GET", file, true);
+  xhttp.open("GET", fileLocation, true);
   xhttp.send();
+}
+function callBack(result) {
+  document.getElementById('content').innerHTML = result.responseText;
 }
 function showYear() {
   // This function display the year on the footer
