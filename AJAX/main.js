@@ -13,7 +13,7 @@ function deepLink() {
   var link = window.location.hash;
   if (link == '') {
     // If we dont need to do anything
-    loadItem('content','index.html');
+    loadItem('content','index-content.html');
     changeTitle("index.html");
   }
   else {

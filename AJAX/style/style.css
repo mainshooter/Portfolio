@@ -54,7 +54,7 @@ h2 {
   text-align: center;
 }
 .footer {
-    margin-top: 2em;
+    /*margin-top: 2em;*/
     font-size: 0.8em;
 }
 .arrow-size {
@@ -81,6 +81,75 @@ input[type=submit] {
   position: relative;
 }
 /* Style for the blinker */
+
+/*Nav*/
+#nav {
+    text-align: center;
+    padding: 0;
+}
+
+#nav ul ul {
+    display: none;
+}
+    #nav ul li:hover > ul {
+        display: block;
+    }
+#nav ul {
+    background: #fff;
+    font-size: 18px;
+    list-style: none;
+    display: inline-table;
+    text-align: center;
+    margin: 0 auto;
+}
+    #nav ul:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    #nav ul li {
+        float: left;
+        transition: 0.3s;
+    }
+    #nav ul li:hover {
+        background: #ecf0f1;
+    }
+        #nav ul li:hover a {
+            color: red;
+        }
+    #nav ul li a {
+      display: block;
+      padding: 1.4em 1em;
+      color: #4CB3F9;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+nav ul ul {
+    background: red;
+    padding: 0px;
+    position: absolute;
+    top: 100%;
+}
+    nav ul ul li {
+        float: none;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        position: relative;
+        top: -1px;
+    }
+        #nav ul ul li a {
+            padding: 15px 40px;
+            color: white;
+        }
+            #nav ul ul li a:hover {
+                background: #D61515;
+            }
+#nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+/*End nav*/
 
 /* Style the links */
 a:link {
@@ -240,6 +309,12 @@ textarea {
 /*end loader*/
 @media only screen and (min-width: 768px) {
     /* For desktop: */
+    #nav ul li a {
+      padding: 1.4em 4em;
+    }
+    #nav ul {
+    font-size: 0.9em;
+  }
 }
 @media only screen and (min-width: 600px) {
   /* Tablet */
