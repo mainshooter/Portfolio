@@ -54,7 +54,6 @@ for (var key in blinkerStyle) {
   // test.key = blinkerStyle[key];
   // document.getElementById('blinker').style.(key);
 }
-console.log(blinkerStyle);
 // Contains the style for the blinker as a object
 
 function intializeTyper(array,speed, typeID, blinkerUse) {

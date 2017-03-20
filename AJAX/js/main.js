@@ -1,13 +1,3 @@
-function getRequest(request) {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("content").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", request, true);
-  xhttp.send();
-}
 function deepLink() {
   // When a vistor goes back we set them back to the good page
   var link = window.location.hash;
@@ -15,14 +5,26 @@ function deepLink() {
     // If we dont need to do anything
     loadItem('content','index-content.html');
     changeTitle("index.html");
-    // typeHandler();
+    intializeTyper(["I am a programmer" , "Building web applications and websites", "With: HTML, CSS, Javascript, PHP and SQL"], "normal", "text", "false");
   }
   else {
-    // cancelTyper();
+    cancelTyper();
     link = link.replace("#", "");
     link += ".html";
     loadItem('content', link);
     changeTitle(link);
+  }
+}
+function loader(status) {
+  // This function starts the loader
+  var loader = document.getElementById('loader').style;
+  if (status == "true") {
+    // AJAX is loading
+    loader.display = "block";
+  }
+  else if (status == "false") {
+    // Ajax is done
+    loader.display = "none";
   }
 }
 function changeTitle(title) {
@@ -47,24 +49,18 @@ function displayTitle(title) {
 }
 function loadItem(elementID, file) {
   // This function prforms a AJAX REQUEST for specific items that needs to be replaced or loaded in ONCE
-  console.log(elementID);
-  console.log(file);
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById(elementID).innerHTML = this.responseText;
+      loader("false");
+    }
+    else {
+      loader("true");
     }
   };
   xhttp.open("GET", file, true);
   xhttp.send();
-}
-function footerLoad() {
-  var footer = document.getElementById('footer-content').innerHTML;
-  // If there isnt anything in the footer
-  // We are gona load it!
-  if (footer == "") {
-    loadItem("footer-content", "footer.html");
-  }
 }
 function showYear() {
   // This function display the year on the footer

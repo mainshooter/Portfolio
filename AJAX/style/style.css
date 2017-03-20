@@ -19,6 +19,11 @@ h2 {
 .margin-header {
   margin-top: 1em !important;
 }
+#loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
 .button {
   height: 4em;
   font-size: 1.3em;
