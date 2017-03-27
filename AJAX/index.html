@@ -30,19 +30,8 @@
   <link rel="icon" type="image/png" href="icon/favicon-16x16.png" sizes="16x16" />
   <link rel="icon" type="image/png" href="icon/favicon-128.png" sizes="128x128" />
 
-  <script>
-    var textArray = [];
-    textArray[0] = "I'm a programmer";
-    textArray[1] = "Building web applications and websites";
-    textArray[2] = "With: HTML, CSS, Javascript, PHP and SQL";
-    // Texts in a array
-    // Text speed
-    // ID of the div that will contains the div
-    // If the blinker needs to work
-  </script>
-
   </head>
-  <body onhashchange="deepLink();" onload='deepLink();' class="background_home">
+  <body onhashchange="deepLink();" onload='deepLink(); showYear();' class="background_home">
     <div class="wrapper">
       <div class="row">
         <div class="col-4 col-m-3"></div>
@@ -78,14 +67,13 @@
 
       <div id="content">
       </div>
-      <div class="footer">Portfolio - Peter Romijn</div>
+      <div id="footer" class="footer">Portfolio - Peter Romijn &copy;</div>
     </div>
   </body>
 
   <link rel="stylesheet" href="style/grid.css" type="text/css" async>
   <link rel="stylesheet" href="style/style.css" type="text/css" async>
 
-  <script src="js/main.js" async></script>
   <script src="js/typer.js" async></script>
-
+  <script src="js/main.js" async></script>
 </html>
