@@ -17,7 +17,7 @@ h1 {
   margin: 0.2em 0;
 }
 h2 {
-      font-size: 2em;
+  font-size: 2em;
 }
 button {
   background-color: lightgray;
@@ -195,7 +195,9 @@ a:active {
     color: white;
 }
 textarea {
-  height: 20em;
+  height: 17em;
+  font-size: 1em;
+  resize: none;
 }
 
 /*Loader*/

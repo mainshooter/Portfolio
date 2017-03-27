@@ -135,7 +135,7 @@ function showYear() {
   // This function display the year on the footer
   var currentYear = new Date();
   currentYear = currentYear.getFullYear();
-  $('footer').innerHTML += currentYear;
+  $('footer').innerHTML += "<time>" + currentYear + "</time>";
 }
 function $(element) {
   // Selects a ID
