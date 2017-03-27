@@ -24,6 +24,9 @@ button {
   font-size: 1em;
   color: black;
 }
+.round_picture {
+    border-radius: 15em;
+}
 .margin-header {
   margin-top: 1em !important;
 }
@@ -44,7 +47,10 @@ button {
   padding: 1em;
   border-radius: 1em;
   border: 3px solid white;
-}.div_button a {
+  color: white;
+  margin-top: 1em;
+}
+.div_button a {
   color: white;
   font-size: 1.5em;
 }

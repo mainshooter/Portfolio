@@ -5,8 +5,8 @@
     require_once 'mail.class.php';
 
     switch ($_REQUEST['send']) {
-      case 'sendMail':
-        $mail = new mail($_POST[''], $_POST[''], $_POST[''], $_POST['']);
+      case 'versturen':
+        $mail = new mail($_POST['name'], $_POST['mail'], $_POST['subject'], $_POST['message']);
         $mail->sendMail();
         break;
 
