@@ -35,6 +35,9 @@ button {
   top: 0;
   right: 0;
 }
+.githubLink {
+  padding: 1.4em 0.5em !important;
+}
 .button {
   height: 4em;
   font-size: 1.3em;
@@ -209,7 +212,6 @@ textarea {
   left: 0;
   top: 0;
 }
-
 .sk-fading-circle .sk-circle:before {
   content: '';
   display: block;
@@ -339,7 +341,13 @@ textarea {
     #nav ul {
     font-size: 0.9em;
   }
+  .githubLink {
+    padding: 1.4em 0.5em;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   /* Tablet */
+  .githubLink {
+    padding: 1.4em 0.7em;
+  }
 }
