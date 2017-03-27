@@ -17,7 +17,7 @@ function deepLink() {
 }
 function loader(status) {
   // This function starts the loader
-  var loader = document.getElementById('loader').style;
+  var loader = $("loader").style;
   if (status == "true") {
     // AJAX is loading
     loader.display = "block";
@@ -45,7 +45,7 @@ function changeTitle(title) {
 }
 function displayTitle(title) {
   // Dispay the title we changed
-  document.getElementById("title").innerHTML = title;
+  $("title").innerHTML = title;
 }
 function loadItem(fileLocation) {
   // This function prforms a AJAX REQUEST for specific items that needs to be replaced or loaded in ONCE
@@ -64,12 +64,16 @@ function loadItem(fileLocation) {
   xhttp.send();
 }
 function callBack(result) {
-  document.getElementById('content').innerHTML = result.responseText;
+  $("content").innerHTML = result.responseText;
 }
 function showYear() {
   // This function display the year on the footer
   var currentYear = new Date();
   currentYear = currentYear.getFullYear();
-  console.log(currentYear);
-  document.getElementById('footer').innerHTML += currentYear;
+  $('footer').innerHTML += currentYear;
+}
+function $(element) {
+  // Selects a ID
+  element = document.getElementById(element);
+  return(element);
 }
