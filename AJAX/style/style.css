@@ -19,6 +19,9 @@ h1 {
   font-size: 2.2em;
   margin: 0.2em 0;
 }
+.experimentHeight {
+  height: 7em;
+}
 h2 {
   font-size: 2em;
 }
