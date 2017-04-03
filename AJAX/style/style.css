@@ -12,6 +12,9 @@ body {
 strong {
       font-style: oblique;
 }
+.tab li {
+  padding-left: 1em
+}
 h1 {
   font-size: 2.2em;
   margin: 0.2em 0;
