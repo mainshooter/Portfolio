@@ -86,7 +86,7 @@ function sendMail() {
     };
     // contains te post values
     var postParameters = "send=versturen&name=" + name + "&mail=" + mail + "&subject=" + subject + "&message=" + message;
-    xhttp.open("POST", "php/ctrl.mail.php?send=versturen", false);
+    xhttp.open("POST", "php/ctrl.mail.php?send=versturen", true);
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send(postParameters);
     }
@@ -125,7 +125,7 @@ function loadItem(fileLocation) {
       loader("true");
     }
   };
-  xhttp.open("GET", fileLocation, false);
+  xhttp.open("GET", fileLocation, true);
   xhttp.send();
 }
 function callBack(result) {
