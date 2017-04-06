@@ -187,6 +187,9 @@ nav ul ul {
     left: 100%;
     top: 0;
 }
+.gitFullWith {
+    width: 100%;
+}
 /*End nav*/
 
 /* Style the links */
@@ -357,10 +360,16 @@ textarea {
   .githubLink {
     padding: 1.4em 0.5em;
   }
+  .gitFullWith {
+      width: 2em;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   /* Tablet */
   .githubLink {
     padding: 1.4em 0.7em;
+  }
+  .gitFullWith {
+    width: 100%;
   }
 }
