@@ -81,6 +81,7 @@ button {
   opacity: 1.0 !important;
 }
 .background_home {
+  /*background-color: black;*/
   background-image: url(/file/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -189,6 +190,7 @@ nav ul ul {
 }
 .gitFullWith {
     width: 100%;
+    float: none !important;
 }
 /*End nav*/
 
@@ -362,6 +364,7 @@ textarea {
   }
   .gitFullWith {
       width: 2em;
+      float: left !important;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 767px) {
@@ -371,5 +374,6 @@ textarea {
   }
   .gitFullWith {
     width: 100%;
+    float: none !important;
   }
 }
