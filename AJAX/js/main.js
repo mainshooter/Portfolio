@@ -78,7 +78,7 @@ function sendMail() {
       if (this.readyState == 4 && this.status == 200) {
         loader("false");
         clearMailForm();
-        alert("Bericht is verzonden");
+        $("mailstatus").innerHTML = this.responseText;
       }
       else {
         loader("true");
