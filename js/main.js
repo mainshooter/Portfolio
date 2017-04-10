@@ -30,8 +30,8 @@ function loader(status) {
 function changeTitle(title) {
   // This function change the Title for the page
   var titleArray = [];
-  titleArray["mywork.html"] = "My work";
-  titleArray["aboutme.html"] = "About me";
+  titleArray["mywork.html"] = "Projecten";
+  titleArray["aboutme.html"] = "Over mij";
   titleArray['contact.html'] = "Contact"
   titleArray["index.html"] = "Portfolio - Peter Romijn";
   // Here we store the title of every page
