@@ -81,8 +81,8 @@ button {
   opacity: 1.0 !important;
 }
 .background_home {
-  /*background-color: black;*/
   background-image: url(/file/background.jpg);
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
