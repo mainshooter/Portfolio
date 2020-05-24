@@ -1,27 +1,33 @@
 <template>
   <div id="app">
-    <menu-list></menu-list>
+    <div id="nav">
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">Over mij</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<script>
-  import menu from './components/menu/MenuComponent'
-
-  export default {
-    name: 'App',
-    components: {
-      "menu-list":menu,
-    }
-  }
-</script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+  #nav {
+    margin-top: 3em;
+    text-align: center;
+    background-color: #fff;
+  }
+  #nav a {
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #12CBC4;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  #nav a:hover {
+    color: #EA2027;
+  }
+  #container {
+    margin: 0 5em;
+  }
 </style>
