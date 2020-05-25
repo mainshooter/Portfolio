@@ -1,12 +1,18 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <img class="logo" src="./assets/logo.png">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">Over mij</router-link>
-      <router-link to="/projects">Projecten</router-link>
+  <div id="app" class="flex flex-column">
+    <div class="flex flex-row">
+      <div id="nav" class="flex flex-column">
+        <img class="logo" src="./assets/logo.png">
+        <router-link to="/">Home</router-link>
+        <router-link to="/about">Over mij</router-link>
+        <router-link to="/projects">Projecten</router-link>
+      </div>
+      <router-view>
+      </router-view>
     </div>
-    <router-view/>
+    <div class="footer flex flex-center">
+      &copy; Peter Romijn
+    </div>
   </div>
 </template>
 
@@ -14,25 +20,36 @@
   * {
     font-family: 'Lato', sans-serif;
   }
+  .flex {
+    display: flex;
+  }
+  .flex-column {
+    flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
   #nav {
     width: 30%;
     text-align: center;
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    height: 90vh;
   }
   #nav a {
     text-align: left;
     display: block;
     padding: 1em 2em;
     text-decoration: none;
-    color: #0652DD;
+    color: black;
     font-size: 1.3rem;
     font-weight: 600;
   }
   #nav a:hover {
-    color: #EA2027;
+    color: gray;
   }
 
   html, body {
@@ -54,6 +71,14 @@
   }
 
   .content {
+    height: 90vh;
     width: 70%;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 0.5em 0;
+    background-color: black;
+    color: #fff;
   }
 </style>
