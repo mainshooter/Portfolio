@@ -1,5 +1,5 @@
 <template>
-  <div class="project">
+  <div class="project flex flex-row">
     <div class="project-image">
       <img v-if="project.image" :src="project.image"/>
     </div>
@@ -7,7 +7,9 @@
       <h3 v-text="project.title"></h3>
       <p v-text="project.description"></p>
       <ul class="links" v-if="project.links.length > 0">
-        <li v-for="link in project.links" :key="link" :href="link.href" v-text="link.text"></li>
+        <li v-for="(link, index) in project.links" :key="index">
+          <a :href="link.href" v-text="link.title"></a>
+        </li>
       </ul>
     </div>
   </div>
@@ -18,7 +20,14 @@
   export default {
     name: 'ProjectComponent',
     props: ['project'],
-    created() {
-    }
   }
 </script>
+
+<style>
+.project {
+  width: 50%;
+}
+  .project-description {
+    width: 100%;
+  }
+</style>

@@ -3,6 +3,7 @@
     <div class="home-container flex">
       <div class="home-text">
         <h1>Hoi, Ik ben Peter Romijn!</h1>
+        <line-compoent></line-compoent>
         <h2>Developer</h2>
         <h2>Badmintonner</h2>
       </div>
@@ -14,19 +15,19 @@
 </template>
 
 <script>
-// @ is an alias to /src
+  import line from '../components/LineComponent.vue';
 
-export default {
-  name: 'Home',
-  components: {
+  export default {
+    name: 'Home',
+    components: {
+      'line-compoent': line,
+    }
   }
-}
 </script>
 
 <style scoped>
   .home-container {
     width: 100%;
-    justify-content: space-evenly;
     align-items: center;
   }
   .home-text {

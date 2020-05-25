@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="project content">
     <h1>Projecten</h1>
-    <project-tag v-for="(project, index) in projects" :project="project" :key="index"></project-tag>
+    <div class="project-container flex flex-row">
+      <project-tag v-for="(project, index) in projects" :project="project" :key="index"></project-tag>
+    </div>
   </div>
 </template>
 
@@ -18,6 +20,7 @@
         projects: [
           new Project({
             title: 'Test project',
+            image: 'https://peter-romijn.nl/file/kermis_weert_logo.png',
             description: 'Lorem ipsum de set a mon',
             links: [
               {
@@ -25,13 +28,14 @@
                 'href': 'nu.nl',
               }
             ]
-          })
+          }),
+          new Project({
+            title: 'Dialogic',
+            image: 'https://peter-romijn.nl/file/kermis_weert_logo.png',
+            description: 'Lorem ipsum',
+          }),
         ],
       }
     },
-
-    created() {
-      console.log(this.projects[0].id);
-    }
   }
 </script>
